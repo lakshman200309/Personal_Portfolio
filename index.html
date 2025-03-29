@@ -1,0 +1,491 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Tumu Lakshman Prasanna Kumar - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+    <script>
+        function navigateTo(pageId) {
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('block');
+                page.classList.add('hidden');
+            });
+            document.getElementById(pageId).classList.remove('hidden');
+            document.getElementById(pageId).classList.add('block');
+        }
+
+        function showProjectDetails(projectId) {
+            document.querySelectorAll('.project-details').forEach(detail => {
+                detail.classList.add('hidden');
+            });
+            document.getElementById(projectId).classList.remove('hidden');
+        }
+    </script>
+</head>
+<body class="bg-gradient-to-r from-green-300 via-blue-300 to-purple-300 text-gray-900">
+    <header class="bg-gradient-to-r from-teal-500 to-blue-500 text-white p-8 text-center relative">
+        <h1 class="text-5xl font-bold">Welcome to My Portfolio</h1>
+        <p class="text-lg mt-2">Explore my skills, projects, and more!</p>
+        <img alt="Portrait of Tumu Lakshman Prasanna Kumar" class="w-30 h-30 rounded-full absolute top-4 right-4 border-4 border-white" height="120" src="personal-photo.jpg" width="120"/>
+    </header>
+    <nav class="bg-gradient-to-r from-gray-800 to-gray-900 text-white p-4 flex justify-center space-x-4">
+        <a class="hover:bg-teal-600 hover:text-white px-4 py-2 rounded transition" href="#" onclick="navigateTo('home')">Home</a>
+        <a class="hover:bg-teal-600 hover:text-white px-4 py-2 rounded transition" href="#" onclick="navigateTo('about')">About</a>
+        <a class="hover:bg-teal-600 hover:text-white px-4 py-2 rounded transition" href="#" onclick="navigateTo('careers')">Careers</a>
+        <a class="hover:bg-teal-600 hover:text-white px-4 py-2 rounded transition" href="#" onclick="navigateTo('education')">Education</a>
+        <a class="hover:bg-teal-600 hover:text-white px-4 py-2 rounded transition" href="#" onclick="navigateTo('skills')">Skills</a>
+        <a class="hover:bg-teal-600 hover:text-white px-4 py-2 rounded transition" href="#" onclick="navigateTo('projects')">Projects</a>
+        <a class="hover:bg-teal-600 hover:text-white px-4 py-2 rounded transition" href="#" onclick="navigateTo('contact')">Contact</a>
+    </nav>
+    <div class="page block p-8" id="home">
+        <div class="bg-white rounded-lg shadow-lg p-8 text-center transition transform hover:-translate-y-1 hover:shadow-xl">
+            <h2 class="text-3xl font-bold mb-4 border-2 border-teal-500 p-2 rounded bg-teal-100">Welcome!</h2>
+            
+            <p class="text-lg text-gray-700 transition transform hover:scale-105 hover:text-teal-500">
+                Explore my journey, skills, projects, and achievements in the world of Computer Science and Artificial Intelligence.
+            </p>
+            
+            <p class="mt-4 text-gray-600 transition transform hover:scale-105 hover:text-blue-500">
+                I am <strong>Tumu Lakshman Prasanna Kumar</strong>, a passionate technology enthusiast specializing in 
+                <strong>Artificial Intelligence, Software Development, and Automation</strong>. This portfolio showcases my technical expertise, 
+                hands-on projects, and the innovative solutions I have worked on.
+            </p>
+            
+            <p class="mt-4 text-gray-600 transition transform hover:scale-105 hover:text-purple-500">
+                Feel free to navigate through my portfolio to learn more about my academic background, skills, certifications, 
+                and professional experiences. Let’s connect and innovate together!
+            </p>
+        </div>
+    </div>    
+    <div class="page hidden p-8" id="about">
+        <div class="bg-white rounded-lg shadow-lg p-8 text-center transition transform hover:-translate-y-1 hover:shadow-xl">
+            <h2 class="text-3xl font-bold mb-4 border-2 border-teal-500 p-2 rounded bg-teal-100">About Me</h2>
+    
+            <p class="text-gray-700 transition transform hover:scale-105 hover:text-teal-500">
+                Hi, I am <strong>Tumu Lakshman Prasanna Kumar</strong>, a passionate Computer Science student specializing in <strong>Artificial Intelligence</strong>.  
+                Currently pursuing my <strong>Master of Computer Applications (MCA)</strong> at Koneru Lakshmaiah Education Foundation, I have a strong academic foundation with a <strong>CGPA of 9.59</strong>.  
+                My technical expertise includes <strong>Python, Java, SQL, HTML, CSS, AI/ML, and software testing</strong>.  
+            </p>
+    
+            <p class="mt-4 text-gray-700 transition transform hover:scale-105 hover:text-blue-500">
+                I have developed cutting-edge projects, such as a <strong>Plant Disease Detection System</strong> using Python and Flask and an <strong>Online Bookstore</strong>  
+                with advanced features like rent, read, speak, buy, and chatbot support.  
+                My internships in Data Science and AI have helped me gain hands-on experience in <strong>predictive modeling, analytics, and automation</strong>.  
+            </p>
+    
+            <p class="mt-4 text-gray-700 transition transform hover:scale-105 hover:text-purple-500">
+                Beyond academics, I am an <strong>analytical thinker, problem-solver, and team player</strong>. I excel in cross-functional collaborations and thrive in  
+                multicultural environments. My passion for technology drives me to explore innovative solutions and contribute to impactful projects.  
+            </p>
+    
+            <p class="mt-4 text-gray-700 transition transform hover:scale-105 hover:text-green-500">
+                When I’m not coding, you can find me <strong>drawing, cooking, reading, writing, or listening to music</strong>.  
+                I believe in continuous learning and staying updated with the latest advancements in technology. Let’s connect and build the future together!  
+            </p>
+    
+            <!-- Resume Download Link -->
+            <p class="mt-6 flex items-center justify-center text-gray-700 transition transform hover:scale-105 hover:text-yellow-500">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Google_Drive_logo.png" 
+                     alt="Google Drive" class="w-6 h-6 mr-2">
+                Resume:
+                <a class="text-blue-500 hover:underline ml-1" 
+                   href="https://drive.google.com/file/d/14KMo49bRGiy0nJ6GyEMk4gsBkSxSm90p/view?usp=sharing" 
+                   target="_blank">
+                   View & Download
+                </a>
+            </p>
+        </div>
+    </div>
+    
+    
+    
+    <div class="page hidden p-8" id="careers">
+        <div class="bg-white rounded-lg shadow-lg p-8 text-center transition transform hover:-translate-y-1 hover:shadow-xl">
+            <h2 class="text-3xl font-bold mb-4 border-2 border-teal-500 p-2 rounded bg-teal-100">Careers</h2>
+            <div class="mb-8">
+                <h3 class="text-2xl font-semibold mb-4 bg-gray-800 text-white p-2 rounded">Work Experience</h3>
+                <div class="experience-item mb-4 p-4 rounded-lg bg-blue-100 transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <h3 class="text-2xl font-semibold">Prompt Personnel</h3>
+                    <div class="flex justify-between items-center mb-2">
+                        <p class="flex items-center">
+                            <img alt="Location icon" class="w-4 h-4 mr-2" src="https://cdn-icons-png.flaticon.com/512/684/684908.png"/>
+                            DMart - Kunchanapalli, Andhra Pradesh
+                        </p>
+                        <p class="flex items-center">
+                            <img alt="Calendar icon" class="w-4 h-4 mr-2" src="https://cdn-icons-png.flaticon.com/512/747/747310.png"/>
+                            Feb 2025 – April 2025
+                        </p>
+                    </div>
+                    <p>Managed stock and assisted customers while maintaining inventory records and transactions. Improved operations through teamwork and ensured smooth retail processes to enhance customer satisfaction.</p>
+                </div>
+                <div class="experience-item mb-4 p-4 rounded-lg bg-blue-100 transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <h3 class="text-2xl font-semibold">Customer Service Associate</h3>
+                    <div class="flex justify-between items-center mb-2">
+                        <p class="flex items-center">
+                            <img alt="Location icon" class="w-4 h-4 mr-2" src="https://cdn-icons-png.flaticon.com/512/684/684908.png"/>
+                            Reliance Retail Limited - Nuzvid, Andhra Pradesh
+                        </p>
+                        <p class="flex items-center">
+                            <img alt="Calendar icon" class="w-4 h-4 mr-2" src="https://cdn-icons-png.flaticon.com/512/747/747310.png"/>
+                            Nov 2022 – Aug 2023
+                        </p>
+                    </div>
+                    <p>This is the place for a brief summary of my key responsibilities and most stellar accomplishments. Assisting Customers, Helping customers with their inquiries, orders, complaints, or concerns in a timely and professional manner. Problem Resolution, Product Knowledge, Communication. Accurately documenting customer interactions, including details of inquiries, complaints, or resolutions, in the company's customer relationship management (CRM) system. Upselling or Cross-selling, Adherence to Policies, Feedback Handling, Team Collaboration, Team Management.</p>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-semibold mb-4 bg-gray-800 text-white p-2 rounded">Internships</h3>
+                <div class="internship-item mb-4 p-4 rounded-lg bg-blue-100 transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <h3 class="text-2xl font-semibold">Data Science &amp; Analytics</h3>
+                    <div class="flex justify-between items-center mb-2">
+                        <p class="flex items-center">
+                            <img alt="Location icon" class="w-4 h-4 mr-2" src="https://cdn-icons-png.flaticon.com/512/684/684908.png"/>
+                            INNOVATE Company
+                        </p>
+                        <p class="flex items-center">
+                            <img alt="Calendar icon" class="w-4 h-4 mr-2" src="https://cdn-icons-png.flaticon.com/512/747/747310.png"/>
+                            10 WEEKS
+                        </p>
+                    </div>
+                    <p>In this internship, I had the opportunity to work on Predictive Modeling for Road Traffic Management: A Data-Driven Approach. Through this internship experience, I gained valuable insights and honed my skills in Data Science.</p>
+                    <p><a href="https://drive.google.com/file/d/1SWnHOXJUcCoGO74veUPqgUA0StAOcAml/view?usp=sharing" target="_blank" class="text-blue-600 hover:underline">View Certificate</a></p>
+                </div>
+                <div class="internship-item mb-4 p-4 rounded-lg bg-blue-100 transition transform hover:-translate-y-1 hover:shadow-xl">
+                    <h3 class="text-2xl font-semibold">ARTIFICIAL INTELLIGENCE</h3>
+                    <div class="flex justify-between items-center mb-2">
+                        <p class="flex items-center">
+                            <img alt="Location icon" class="w-4 h-4 mr-2" src="https://cdn-icons-png.flaticon.com/512/684/684908.png"/>
+                            Pantech e Learning (NITK STEP) Company
+                        </p>
+                        <p class="flex items-center">
+                            <img alt="Calendar icon" class="w-4 h-4 mr-2" src="https://cdn-icons-png.flaticon.com/512/747/747310.png"/>
+                            4 WEEKS
+                        </p>
+                    </div>
+                    <p>This internship provided me with valuable insights into the exciting field of Artificial Intelligence, enhanced my technical skills, and sparked my passion for leveraging AI to solve complex problems. It was an enriching experience that solidified my interest in pursuing a career in AI research and development.</p>
+                    <p><a href="https://drive.google.com/file/d/1Msjr8YRZqiMD5tei6WVvm5yI1LETqmdS/view?usp=sharing" target="_blank" class="text-blue-600 hover:underline">View Certificate</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page hidden p-8 bg-white text-gray-900" id="education">
+        <div class="bg-gray-100 rounded-lg shadow-lg p-8 text-center transition transform hover:-translate-y-1 hover:shadow-xl">
+            <h2 class="text-3xl font-bold mb-4 border-2 border-teal-500 p-2 rounded bg-teal-200">Education</h2>
+            <div class="education-item mb-4 p-4 rounded-lg bg-blue-100 transition transform hover:-translate-y-1 hover:shadow-xl">
+                <h3 class="text-2xl font-semibold flex items-center justify-center">
+                    <i class="fas fa-user-graduate text-yellow-600 mr-2"></i>
+                    MASTER OF COMPUTER APPLICATIONS (ARTIFICIAL INTELLIGENCE)
+                </h3>
+                <p class="flex items-center justify-center">
+                    <i class="fas fa-university text-blue-600 mr-2"></i>
+                    KONERU LAKSHMAIAH EDUCATION FOUNDATION
+                </p>
+                <div class="flex justify-between">
+                    <p class="flex items-center font-bold">
+                        <i class="fas fa-map-marker-alt text-red-600 mr-2"></i>
+                        Guntur
+                    </p>
+                    <p class="text-right font-bold">CGPA: 9.59</p>
+                </div>
+            </div>
+            <div class="education-item mb-4 p-4 rounded-lg bg-blue-100 transition transform hover:-translate-y-1 hover:shadow-xl">
+                <h3 class="text-2xl font-semibold flex items-center justify-center">
+                    <i class="fas fa-user-graduate text-yellow-600 mr-2"></i>
+                    BACHELOR OF SCIENCE &amp; COMPUTERS (MSCS)
+                </h3>
+                <p class="flex items-center justify-center">
+                    <i class="fas fa-university text-blue-600 mr-2"></i>
+                    SRI SIDDHARTHA DEGREE COLLEGE OF SCIENCE &amp; COMPUTERS
+                </p>
+                <div class="flex justify-between">
+                    <p class="flex items-center font-bold">
+                        <i class="fas fa-map-marker-alt text-red-600 mr-2"></i>
+                        Nuzvid
+                    </p>
+                    <p class="text-right font-bold">CGPA: 7.96</p>
+                </div>
+            </div>
+            <div class="education-item mb-4 p-4 rounded-lg bg-blue-100 transition transform hover:-translate-y-1 hover:shadow-xl">
+                <h3 class="text-2xl font-semibold flex items-center justify-center">
+                    <i class="fas fa-user-graduate text-yellow-600 mr-2"></i>
+                    XII CLASS (MPC)
+                </h3>
+                <p class="flex items-center justify-center">
+                    <i class="fas fa-university text-blue-600 mr-2"></i>
+                    MARUTHI JUNIOR COLLEGE
+                </p>
+                <div class="flex justify-between">
+                    <p class="flex items-center font-bold">
+                        <i class="fas fa-map-marker-alt text-red-600 mr-2"></i>
+                        Nuzvid
+                    </p>
+                    <p class="text-right font-bold">CGPA: 9.19</p>
+                </div>
+            </div>
+            <div class="education-item mb-4 p-4 rounded-lg bg-blue-100 transition transform hover:-translate-y-1 hover:shadow-xl">
+                <h3 class="text-2xl font-semibold flex items-center justify-center">
+                    <i class="fas fa-user-graduate text-yellow-600 mr-2"></i>
+                    X CLASS
+                </h3>
+                <p class="flex items-center justify-center">
+                    <i class="fas fa-university text-blue-600 mr-2"></i>
+                    ST. THOMAS HIGH SCHOOL
+                </p>
+                <div class="flex justify-between">
+                    <p class="flex items-center font-bold">
+                        <i class="fas fa-map-marker-alt text-red-600 mr-2"></i>
+                        Nuzvid
+                    </p>
+                    <p class="text-right font-bold">CGPA: 9.7</p>
+                </div>
+            </div>
+        </div>
+    </div>    
+    
+    <div class="page hidden p-8" id="skills">
+        <div class="flex flex-wrap justify-center">
+            <!-- Technical Skills -->
+            <div class="bg-white rounded-lg shadow-lg p-8 text-center transition transform hover:-translate-y-1 hover:shadow-xl hover:scale-105 m-4 w-full md:w-1/2 lg:w-1/3">
+                <h2 class="text-3xl font-bold mb-4 border-2 border-blue-500 p-2 rounded bg-blue-100">Technical Skills</h2>
+                <ul class="list-none mb-4">
+                    <li class="flex items-center mb-2 transition transform hover:text-blue-600 hover:scale-105">
+                        <img alt="Python logo" class="w-6 h-6 mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"/>
+                        <span>Python</span>
+                    </li>
+                    <li class="flex items-center mb-2 transition transform hover:text-red-500 hover:scale-105">
+                        <img alt="Java logo" class="w-6 h-6 mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"/>
+                        <span>Java</span>
+                    </li>
+                    <li class="flex items-center mb-2 transition transform hover:text-orange-500 hover:scale-105">
+                        <img alt="HTML & CSS logo" class="w-6 h-6 mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"/>
+                        <span>HTML & CSS</span>
+                    </li>
+                    <li class="flex items-center mb-2 transition transform hover:text-green-500 hover:scale-105">
+                        <img alt="SQL logo" class="w-6 h-6 mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"/>
+                        <span>SQL</span>
+                    </li>
+                    <li class="flex items-center mb-2 transition transform hover:text-purple-500 hover:scale-105">
+                        <img alt="Flask logo" class="w-6 h-6 mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg"/>
+                        <span>Flask</span>
+                    </li>
+                    <li class="flex items-center mb-2 transition transform hover:text-yellow-500 hover:scale-105">
+                        <img alt="AI & ML logo" class="w-6 h-6 mr-2" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"/>
+                        <span>AI & Machine Learning</span>
+                    </li>
+                </ul>
+            </div>
+    
+            <!-- Soft Skills -->
+            <div class="bg-white rounded-lg shadow-lg p-8 text-center transition transform hover:-translate-y-1 hover:shadow-xl hover:scale-105 m-4 w-full md:w-1/2 lg:w-1/3">
+                <h2 class="text-3xl font-bold mb-4 border-2 border-green-500 p-2 rounded bg-green-100">Soft Skills</h2>
+                <ul class="list-none">
+                    <li class="flex items-center mb-2 transition transform hover:text-green-600 hover:scale-105">
+                        <i class="fas fa-users mr-2"></i>
+                        <span>Adaptability</span>
+                    </li>
+                    <li class="flex items-center mb-2 transition transform hover:text-yellow-500 hover:scale-105">
+                        <i class="fas fa-lightbulb mr-2"></i>
+                        <span>Problem-Solving</span>
+                    </li>
+                    <li class="flex items-center mb-2 transition transform hover:text-blue-500 hover:scale-105">
+                        <i class="fas fa-chart-line mr-2"></i>
+                        <span>Analytical Thinking</span>
+                    </li>
+                    <li class="flex items-center mb-2 transition transform hover:text-purple-500 hover:scale-105">
+                        <i class="fas fa-handshake mr-2"></i>
+                        <span>Team Collaboration</span>
+                    </li>
+                    <li class="flex items-center mb-2 transition transform hover:text-red-500 hover:scale-105">
+                        <i class="fas fa-comments mr-2"></i>
+                        <span>Communication</span>
+                    </li>
+                    <li class="flex items-center mb-2 transition transform hover:text-orange-500 hover:scale-105">
+                        <i class="fas fa-clock mr-2"></i>
+                        <span>Time Management</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page hidden p-8" id="projects">
+        <div class="bg-white rounded-lg shadow-lg p-8 text-center">
+            <h2 class="text-3xl font-bold mb-4 border-2 border-purple-500 p-2 rounded bg-purple-100">Projects</h2>
+            
+            <div class="project-box transition transform hover:scale-105 hover:shadow-2xl p-6 rounded-lg border border-gray-300 mb-4">
+                <h3 class="text-2xl font-semibold mb-2 flex items-center justify-center">
+                    <i class="fas fa-seedling mr-2"></i>
+                    <a class="text-blue-500 hover:underline" href="#" onclick="showProjectDetails('plant-disease-project')">Plant Disease Detection and Treatment</a>
+                </h3>
+                <div class="project-details hidden mt-4 flex items-center" id="plant-disease-project">
+                    <div class="w-2/3">
+                        <p>Developed a machine learning-based system to detect plant diseases from images using Python and Flask.</p>
+                        <p>Utilized deep learning techniques for image classification and improved accuracy of disease identification.</p>
+                        <p>Future enhancements include suggesting treatments based on detected diseases.</p>
+                        <p><a class="text-blue-500 hover:underline" href="https://github.com/lakshman200309/Plant_Disease_Detection" target="_blank">View on GitHub</a></p>
+                        <p><a class="text-blue-500 hover:underline" href="https://lakshman200309.github.io/Plant_Disease_Detection/" target="_blank">Live Demo</a></p>
+                    </div>
+                    <div class="w-1/3 ml-4">
+                        <img src="plantDiseaseImage.jpg" alt="Plant Disease Detection" class="rounded-lg shadow-md">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-box transition transform hover:scale-105 hover:shadow-2xl p-6 rounded-lg border border-gray-300 mb-4">
+                <h3 class="text-2xl font-semibold mb-2 flex items-center justify-center">
+                    <i class="fas fa-car mr-2"></i>
+                    <a class="text-blue-500 hover:underline" href="#" onclick="showProjectDetails('car-rental-project')">Car Rental System</a>
+                </h3>
+                <div class="project-details hidden mt-4 flex items-center" id="car-rental-project">
+                    <div class="w-2/3">
+                        <p>Designed and implemented a web-based car rental system using Python, HTML, and SQL.</p>
+                        <p>Features include vehicle booking, availability management, and user authentication.</p>
+                        <p>Focused on streamlining rental operations and enhancing customer experience.</p>
+                        <p><a class="text-blue-500 hover:underline" href="https://github.com/lakshman200309/Car-Rental-System-Project" target="_blank">View on GitHub</a></p>
+                        <p><a class="text-blue-500 hover:underline" href="https://lakshman200309.github.io/Car-Rental-System-Project/" target="_blank">Live Demo</a></p>
+                    </div>
+                    <div class="w-1/3 ml-4">
+                        <img src="carRentalSystem.jpg" alt="Car Rental System" class="rounded-lg shadow-md">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-box transition transform hover:scale-105 hover:shadow-2xl p-6 rounded-lg border border-gray-300 mb-4">
+                <h3 class="text-2xl font-semibold mb-2 flex items-center justify-center">
+                    <i class="fas fa-film mr-2"></i>
+                    <a class="text-blue-500 hover:underline" href="#" onclick="showProjectDetails('movie-recommendation-project')">Movie Recommendation System</a>
+                </h3>
+                <div class="project-details hidden mt-4 flex items-center" id="movie-recommendation-project">
+                    <div class="w-2/3">
+                        <p>Built a recommendation engine using machine learning techniques to suggest movies based on user preferences.</p>
+                        <p>Implemented collaborative and content-based filtering methods.</p>
+                        <p>Developed an interactive web interface for user engagement.</p>
+                        <p><a class="text-blue-500 hover:underline" href="https://github.com/lakshman200309/Movie_Recommendation_System" target="_blank">View on GitHub</a></p>
+                        <p><a class="text-blue-500 hover:underline" href="https://lakshman200309.github.io/Movie_Recommendation_System/" target="_blank">Live Demo</a></p>
+                    </div>
+                    <div class="w-1/3 ml-4">
+                        <img src="MovieRecommendationSystem.jpg" alt="Movie Recommendation System" class="rounded-lg shadow-md">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-box transition transform hover:scale-105 hover:shadow-2xl p-6 rounded-lg border border-gray-300 mb-4">
+                <h3 class="text-2xl font-semibold mb-2 flex items-center justify-center">
+                    <i class="fas fa-traffic-light mr-2"></i>
+                    <a class="text-blue-500 hover:underline" href="#" onclick="showProjectDetails('traffic-project')">Predictive Modeling for Road Traffic Management</a>
+                </h3>
+                <div class="project-details hidden mt-4 flex items-center" id="traffic-project">
+                    <div class="w-2/3">
+                        <p>This project involves using predictive modeling techniques to manage road traffic effectively.</p>
+                        <p>By leveraging real-time data and machine learning algorithms, it aims to optimize traffic flow and reduce congestion.</p>
+                        <p>Example techniques include regression analysis and neural networks for pattern recognition.</p>
+                    </div>
+                    <div class="w-1/3 ml-4">
+                        <img src="roadTraffic.jpg" alt="Road Traffic Management" class="rounded-lg shadow-md">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-box transition transform hover:scale-105 hover:shadow-2xl p-6 rounded-lg border border-gray-300 mb-4">
+                <h3 class="text-2xl font-semibold mb-2 flex items-center justify-center">
+                    <i class="fas fa-robot mr-2"></i>
+                    <a class="text-blue-500 hover:underline" href="#" onclick="showProjectDetails('ai-research')">Artificial Intelligence Applications</a>
+                </h3>
+                <div class="project-details hidden mt-4 flex items-center" id="ai-research">
+                    <div class="w-2/3">
+                        <p>Applying AI to day-to-day tasks to make them faster, simpler, and more efficient.</p>
+                        <p>Developing AI models and websites that enhance automation and productivity.</p>
+                        <p>Utilizing AI-powered prompts to improve task completion and optimize workflow efficiency.</p>
+                        <p>Integrating machine learning, natural language processing, and computer vision into real-world applications.</p>
+                    </div>
+                    <div class="w-1/3 ml-4">
+                        <img src="aiApplications.jpg" alt="AI Applications" class="rounded-lg shadow-md">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function showProjectDetails(projectId) {
+            document.querySelectorAll('.project-details').forEach(el => el.classList.add('hidden'));
+            document.getElementById(projectId).classList.remove('hidden');
+        }
+    </script>    
+    
+<div class="page hidden p-8" id="contact">
+    <div class="bg-white rounded-lg shadow-lg p-8 text-center transition transform hover:-translate-y-1 hover:shadow-xl hover:scale-105">
+        <h2 class="text-3xl font-bold mb-4 border-2 border-teal-500 p-2 rounded bg-teal-100">Contact</h2>
+
+        <p class="flex items-center justify-center mb-2 transition transform hover:text-teal-600 hover:scale-105">
+            <i class="fas fa-envelope mr-2 text-red-500"></i>
+            Email:
+            <a class="text-blue-500 hover:underline ml-1" href="mailto:lpkumartumu@gmail.com">lpkumartumu@gmail.com</a>
+        </p>
+
+        <p class="flex items-center justify-center mb-2 transition transform hover:text-blue-600 hover:scale-105">
+            <i class="fab fa-linkedin mr-2 text-blue-700"></i>
+            LinkedIn:
+            <a class="text-blue-500 hover:underline ml-1" href="https://www.linkedin.com/in/tumu-lakshman-prasanna-kumar-a37561270" target="_blank">View Profile</a>
+        </p>
+
+        <p class="flex items-center justify-center mb-2 transition transform hover:text-blue-500 hover:scale-105">
+            <i class="fab fa-telegram mr-2 text-blue-400"></i>
+            Telegram:
+            <a class="text-blue-500 hover:underline ml-1" href="https://t.me/+919490200309" target="_blank">Chat Now</a>
+        </p>
+
+        <p class="flex items-center justify-center mb-2 transition transform hover:text-green-600 hover:scale-105">
+            <i class="fas fa-phone-alt mr-2 text-green-500"></i>
+            Phone:
+            <a class="text-blue-500 hover:underline ml-1" href="tel:+919490200309">+91 9490200309</a>
+        </p>
+
+        <p class="flex items-center justify-center mb-2 transition transform hover:text-green-500 hover:scale-105">
+            <i class="fab fa-whatsapp mr-2 text-green-600"></i>
+            WhatsApp:
+            <a class="text-blue-500 hover:underline ml-1" 
+               href="https://wa.me/919490200309?text=Hello%20Lakshman%2C%20I%20have%20gone%20through%20your%20personal%20portfolio%20and%20it%20is%20awesome!%20I%20want%20to%20chat%20with%20you." 
+               target="_blank">
+               Chat Now
+            </a>
+        </p>
+
+        <p class="flex items-center justify-center mb-2 transition transform hover:text-pink-600 hover:scale-105">
+            <i class="fab fa-instagram mr-2 text-pink-500"></i>
+            Instagram:
+            <a class="text-blue-500 hover:underline ml-1" href="https://www.instagram.com/i_m_the_hotstar?igsh=MTdxdjc0ZWY0MGxhdA==" target="_blank">@i_m_the_hotstar</a>
+        </p>
+
+        <p class="flex items-center justify-center mb-4 transition transform hover:text-gray-600 hover:scale-105">
+            <i class="fas fa-map-marker-alt mr-2 text-gray-500"></i>
+            Location:
+            <a class="text-blue-500 hover:underline ml-1" href="https://maps.app.goo.gl/Xhzdn2Fi7vLnEFWg7" target="_blank">Vijayawada, Andhra Pradesh</a>
+        </p>
+
+        <!-- Google Map Embed -->
+        <div class="mt-4 border-2 border-gray-300 rounded-lg overflow-hidden shadow-lg transition transform hover:shadow-xl hover:scale-105">
+            <iframe 
+                width="100%" height="300" 
+                frameborder="0" 
+                style="border:0;" 
+                allowfullscreen 
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://maps.app.goo.gl/Xhzdn2Fi7vLnEFWg7">
+            </iframe>
+        </div>
+    </div>
+</div>
+
+    <footer class="bg-gradient-to-r from-teal-500 to-blue-500 text-white text-center p-4">
+        <p>© 2025 Tumu Lakshman Prasanna Kumar</p>
+    </footer>
+</body>
+</html>
