@@ -1,41 +1,49 @@
-# 🔐 Face Authentication System
+# 🌐 Personal Portfolio
 
-A real-time face authentication system that allows users to **enroll** and **login** using their face via webcam. Built with **YOLOv8** for face detection and **FaceNet** for face embedding, and powered by an interactive **Streamlit** interface.
+Welcome to my **personal developer portfolio** — a one-stop place to explore who I am, the projects I’ve worked on, and how to get in touch with me!
 
----
-
-## 🚀 Features
-
-- 🔍 **Face Detection** using YOLOv8
-- 🧠 **Face Recognition** using FaceNet (InceptionResnetV1)
-- 📸 **Enroll** new users via webcam
-- 👤 **Login** with face-based authentication
-- 💻 **Streamlit Interface** for seamless interaction
-- 🧾 **Embedding Storage** using NumPy `.npy` files
+🔗 **Live Site**: [lakshman200309.github.io/Personal_Portfolio](https://lakshman200309.github.io/Personal_Portfolio/)
 
 ---
 
-## 📸 Demo
+## ✨ Features
 
-> Coming Soon — check out the [Live Demo](https://lakshman200309.github.io/Personal_Portfolio/) on my portfolio!
+- 🖼️ Beautiful, responsive layout using **HTML, CSS, and Tailwind CSS**
+- 💼 Project showcase with detailed descriptions, live demos, and GitHub links
+- 🙋‍♂️ About Me section with background, interests, and skills
+- 📬 Contact details with links to email, GitHub, LinkedIn, and portfolio
+- 🎨 Hover effects, smooth transitions, and clean typography
+
+---
+
+## 📁 Sections
+
+- **Home** – Welcome message and quick overview
+- **About** – Who I am and what I love doing
+- **Projects** – Detailed breakdown of my featured projects
+- **Contact** – Let's connect!
 
 ---
 
 ## 🛠️ Tech Stack
 
-- **Python 3.x**
-- **Streamlit**
-- **OpenCV**
-- **facenet-pytorch**
-- **ultralytics (YOLOv8)**
-- **NumPy**
-- **SciPy**
+- **HTML5**
+- **Tailwind CSS**
+- **JavaScript** (for interactivity)
+- **Font Awesome** (for icons)
 
 ---
 
-## 🔧 Setup Instructions
+## 📸 Preview
 
-1. **Clone the Repository**
+> ![Portfolio Preview](preview.jpg)  
+> *(You can add a screenshot here for visual appeal)*
+
+---
+
+## 🧩 How to Use
+
+1. Clone the repository:
    ```bash
-   git clone https://github.com/lakshman200309/Face_Authentication_System.git
-   cd Face_Authentication_System
+   git clone https://github.com/lakshman200309/Personal_Portfolio.git
+   cd Personal_Portfolio
